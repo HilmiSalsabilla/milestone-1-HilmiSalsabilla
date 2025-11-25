@@ -45,10 +45,10 @@ This is the preview of my Personal Website:
 
 | Page | Preview |
 | :--- | :-----: |
-| Homepage | ![Homepage](/assets/preview/pages/index.png) |
-| About Page | ![About Page](/assets/preview/pages/about.png) |
-| Projects Page | ![Projects Page](/assets/preview/pages/projects.png) |
-| Contact Page | ![Contact Page](/assets/preview/pages/contact.png) |
+| Homepage | ![Homepage](/assets/preview/pages/new_index.png) |
+| About Page | ![About Page](/assets/preview/pages/new_about.png) |
+| Projects Page | ![Projects Page](/assets/preview/pages/new_projects.png) |
+| Contact Page | ![Contact Page](/assets/preview/pages/new_contact.png) |
 
 ## Contact
 Feel free to reach out via the contact form or social links!
