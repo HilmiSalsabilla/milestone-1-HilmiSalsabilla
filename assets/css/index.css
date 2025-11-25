@@ -188,15 +188,20 @@ section {
     color: #023E8A;
 }
 
-/* contact form */
+.contact p {
+    font-size: 18px;
+    color: #1A1A1A;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
 fieldset {
     border: none;
-    padding: 10px 0;
 }
 
 legend {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #1A1A1A;
 }
 

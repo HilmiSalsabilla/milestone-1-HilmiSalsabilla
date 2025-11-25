@@ -1,6 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/KTVBmApB)
 
 # Personal Website | Hilmi Salsabilla
+View the live site here: [Hilmi Salsabilla | Personal Website](https://revou-fsse-oct25.github.io/milestone-1-HilmiSalsabilla/)
 
 ## Overview
 This is apersonal webiste built as part of the FSSE RevoU program with semantic HTML5 and CSS3. It become my personal portofolio where i can introducing myself, showcase my projects and allow other to contact me easily!
@@ -18,26 +19,29 @@ This is apersonal webiste built as part of the FSSE RevoU program with semantic 
 
 ## Directory Structure
 ```
-    .
-    ├── assets/
-    │   ├── css/
-    │   ├── document/
-    │   ├── images/
-    │   ├── logo/
-    │   └── preview/
-    |       ├── pages/
-    |       └── projects/
-    ├── pages/
-    │   ├── about.html/
-    │   ├── contact.html/
-    │   └── projects.html/
-    ├── index.html
-    └── README.md
+.
+├── assets/
+│   ├── css/
+|   |   ├── index.css
+|   |   ├── about.css
+|   |   ├── projects.css
+|   |   └── contact.css
+│   ├── document/
+│   ├── images/
+│   ├── logo/
+│   └── preview/
+|       ├── pages/
+|       └── projects/
+├── pages/
+│   ├── about.html
+│   ├── contact.html
+│   └── projects.html
+├── index.html
+└── README.md
 ```
 
-## Deployment
-- View the live site here: [Hilmi Salsabilla | Personal Website](https://revou-fsse-oct25.github.io/milestone-1-HilmiSalsabilla/)
-- This is the preview of my Personal Website:
+## Screenshot
+This is the preview of my Personal Website:
 
 | Page | Preview |
 | :--- | :-----: |
