@@ -187,9 +187,7 @@ a:focus {
     width: 100%;
 }
 
-/* ===================================
-   Projects Section
-   =================================== */
+/* project section */
 .project {
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
@@ -207,9 +205,7 @@ a:focus {
     color: var(--color-dark);
 }
 
-/* ===================================
-   Internal Navigation (Jump to Project)
-   =================================== */
+/* internal nav */
 aside {
     background: linear-gradient(135deg, rgba(232, 226, 220, 0.6), rgba(255, 255, 255, 0.8));
     border-radius: var(--radius-md);
@@ -262,9 +258,7 @@ aside nav a:hover {
     transform: translateX(5px);
 }
 
-/* ===================================
-   Project Cards
-   =================================== */
+/* project-card */
 .project-card {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(232, 226, 220, 0.4));
     border-radius: var(--radius-lg);
@@ -283,9 +277,7 @@ aside nav a:hover {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(232, 226, 220, 0.5));
 }
 
-/* ===================================
-   Project Figure & Images
-   =================================== */
+/* project image */
 .project-card figure {
     margin: 0;
     position: relative;
@@ -317,9 +309,7 @@ aside nav a:hover {
     padding: var(--spacing-xs);
 }
 
-/* ===================================
-   Project Info
-   =================================== */
+/* project-info */
 .project-info {
     display: flex;
     flex-direction: column;
@@ -351,9 +341,7 @@ aside nav a:hover {
     margin-bottom: var(--spacing-sm);
 }
 
-/* ===================================
-   Project Links
-   =================================== */
+/* projecy-link */
 .project-link {
     list-style: none;
     padding: 0;
