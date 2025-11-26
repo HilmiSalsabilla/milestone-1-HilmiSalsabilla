@@ -281,8 +281,8 @@ aside nav a:hover {
 .project-card figure {
     margin: 0;
     position: relative;
-    overflow: hidden;
-    border-radius: var(--radius-md);
+    /* overflow: hidden; */
+    /* border-radius: var(--radius-md); */
     background: var(--color-light);
 }
 
@@ -290,14 +290,16 @@ aside nav a:hover {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: var(--radius-md);
-    transition: transform var(--transition-slow);
+    /* border-radius: var(--radius-md); */
+    transition: transform var(--transition-slow), filter var(--transition-slow);
+    filter: grayscale(1);
     object-fit: cover;
     max-height: 400px;
 }
 
 .project-card figure:hover img {
     transform: scale(1.05);
+    filter: grayscale(0);
 }
 
 .project-card figcaption {
