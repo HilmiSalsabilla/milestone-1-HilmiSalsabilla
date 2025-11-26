@@ -493,15 +493,16 @@ aside nav a:hover {
     }
     
     .site-nav ul {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         gap: var(--spacing-xs);
         width: 100%;
+        flex-wrap: wrap;
     }
     
     .site-nav a {
-        display: block;
-        text-align: center;
-        padding: var(--spacing-sm);
+        font-size: clamp(0.75rem, 2vw, 0.85rem);
+        padding: var(--spacing-xs) 0.6rem;
     }
     
     #main-content {
@@ -540,6 +541,91 @@ aside nav a:hover {
     
     .site-footer .social-links {
         gap: var(--spacing-sm);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    :root {
+        --spacing-xs: 0.35rem;
+        --spacing-sm: 0.75rem;
+        --spacing-md: 0.85rem;
+        --spacing-lg: 1.25rem;
+        --spacing-xl: 1.75rem;
+    }
+    
+    .site-header {
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+    
+    .logo a {
+        font-size: clamp(1rem, 4vw, 1.25rem);
+    }
+    
+    .site-nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.25rem;
+        flex-wrap: wrap;
+    }
+    
+    .site-nav a {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    #main-content {
+        padding: var(--spacing-md) var(--spacing-xs);
+    }
+    
+    .project {
+        padding: var(--spacing-md) var(--spacing-xs);
+    }
+    
+    aside {
+        padding: var(--spacing-xs);
+    }
+    
+    aside h3 {
+        font-size: 1rem;
+    }
+    
+    aside nav ul {
+        gap: 0.25rem;
+    }
+    
+    aside nav a {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .project-card {
+        padding: var(--spacing-xs);
+        gap: var(--spacing-sm);
+    }
+    
+    .project-card img {
+        max-height: 200px;
+    }
+    
+    h2 {
+        font-size: clamp(1.35rem, 5vw, 1.75rem);
+    }
+    
+    h3 {
+        font-size: clamp(1.1rem, 4vw, 1.35rem);
+    }
+    
+    .project-link a {
+        font-size: 0.8rem;
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+    
+    .back-to-top {
+        bottom: var(--spacing-sm);
+        right: var(--spacing-sm);
+        width: 40px;
+        height: 40px;
+        font-size: 1.15rem;
     }
 }
 
