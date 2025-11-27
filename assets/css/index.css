@@ -45,6 +45,7 @@ body {
     background: linear-gradient(135deg, var(--color-lightest) 0%, var(--color-light) 100%);
     min-height: 100vh;
     overflow-x: hidden;
+    padding-top: 80px;
 }
 
 /* typo */
@@ -127,8 +128,10 @@ a:focus {
     background: rgba(245, 241, 237, 0.95);
     backdrop-filter: blur(10px);
     padding: var(--spacing-xs) var(--spacing-lg);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     box-shadow: 0 2px 20px rgba(58, 52, 47, 0.08);
     display: flex;
@@ -136,6 +139,11 @@ a:focus {
     align-items: center;
     flex-wrap: wrap;
     gap: var(--spacing-md);
+    transition: transform var(--transition-normal);
+}
+
+.site-header.hidden {
+    transform: translateY(-100%);
 }
 
 .logo {
@@ -544,16 +552,34 @@ button:active {
     height: clamp(20px, 5vw, 30px);
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-lightest);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-medium);
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 768px) {
     :root {
         --spacing-lg: 2rem;
         --spacing-xl: 3rem;
+    }
+
+    body {
+        padding-top: 160px;
     }
     
     .site-header {
         flex-direction: column;
         text-align: center;
         padding: var(--spacing-md);
+        position: fixed;
     }
     
     .site-nav ul {
@@ -583,7 +609,6 @@ button:active {
     }
 }
 
-/* Mobile (480px and below) */
 @media screen and (max-width: 480px) {
     :root {
         --spacing-md: 1rem;
@@ -591,9 +616,13 @@ button:active {
         --spacing-xl: 2rem;
     }
     
+    body {
+        padding-top: 130px;
+    }
+    
     .site-header {
         padding: var(--spacing-sm);
-        position: static;
+        position: fixed;
     }
     
     .site-nav ul {
@@ -653,9 +682,14 @@ button:active {
         --spacing-lg: 1.25rem;
         --spacing-xl: 1.75rem;
     }
+
+    body {
+        padding-top: 140px;
+    }
     
     .site-header {
         padding: var(--spacing-xs) var(--spacing-sm);
+        position: fixed;
     }
     
     .logo a {
