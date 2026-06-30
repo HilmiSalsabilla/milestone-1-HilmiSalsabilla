@@ -5,173 +5,507 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- browser tab -->
-    <title>Hilmi Salsabilla | Personal Website</title>
+    <title>Hilmi Salsabilla - Web Developer</title>
     <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tw-config.js"></script>
+    <link rel="stylesheet" href="assets/css/custom.css">
 
     <!-- seo meta -->
-    <meta name="description" content="I'm Hilmi Salsabilla, an Information Systems student and web developer. Explore my projects, experience, and personal portfolio.">
+    <meta name="description" content="Hilmi Salsabilla, Information Systems student and web developer. Portfolio of projects, skills, and experience.">
     <meta name="keywords" content="Hilmi Salsabilla, web developer, portfolio, projects, Information Systems">
     <meta name="author" content="Hilmi Salsabilla">
 </head>
-<body id="top">
-    <!-- header -->
-    <header class="site-header">
-        <h1 class="logo">
-            <a href="index.html" aria-label="Homepage of Hilmi Salsabilla">Hilmi Salsabilla</a>
-        </h1>
 
-        <nav class="site-nav" aria-label="Main Navigation">
-            <ul class="list-nav">
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/projects.html">Projects</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-                <li><a href="assets/document/cv-hilmi-salsabilla.pdf" download>Download CV</a></li>
+<body class="bg-bg text-ink font-body leading-relaxed overflow-x-hidden">
+    <!-- header -->
+    <header>
+        <nav class="site-nav fixed top-0 left-0 right-0 z-[100] flex justify-between items-center px-6 md:px-12 py-4 bg-bg/80 backdrop-blur-xl border-b border-line">
+            <a href="index.html" class="font-display font-extrabold text-lg tracking-wide text-ink">H<span class="text-indsoft">.</span>S</a>
+            
+            <ul class="hidden md:flex gap-1 list-none">
+                <li>
+                    <a href="index.html" class="text-sm font-medium px-3.5 py-1.5 rounded-md text-indsoft bg-white/5" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="pages/about.html" class="text-sm font-medium px-3.5 py-1.5 rounded-md text-muted hover:text-ink hover:bg-white/5 transition">About</a>
+                </li>
+                <li>
+                    <a href="pages/projects.html" class="text-sm font-medium px-3.5 py-1.5 rounded-md text-muted hover:text-ink hover:bg-white/5 transition">Projects</a>
+                </li>
+                <li>
+                    <a href="pages/contact.html" class="text-sm font-semibold px-4 py-1.5 rounded-md text-indsoft border border-ind/35 hover:bg-indglow hover:text-ink transition">Contact</a>
+                </li>
+                <li>
+                    <a href="assets/document/cv-hilmi-salsabilla.pdf" download class="text-sm font-medium px-3.5 py-1.5 rounded-md text-muted hover:text-ink hover:bg-white/5 transition">Download CV</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <!-- main -->
-    <main id="main-content">
+    <main>
         <!-- hero -->
-        <section class="hero" id="hero">
-            <figure>
-                <img src="assets/images/profile.png" alt="Profile photo of Hilmi Salsabilla" loading="lazy">
-                <figcaption>Hilmi Salsabilla — Information Systems Student & Web Developer</figcaption>
-            </figure>
-            
-            <h2>Hi, I'm Hilmi Salsabilla 👋</h2>
-            <p>
-                Welcome to my personal website — a space where I share my journey as a student at <strong>FSSE RevoU</strong>, my learning experience, and my projects I've built so far.
+        <section class="relative min-h-screen flex flex-col justify-center overflow-hidden" id="top" aria-labelledby="hero-heading">            
+            <div class="relative z-10 max-w-5xl mx-auto px-6 md:px-10 w-full">
+                <p class="flex items-center gap-3 text-xs font-medium tracking-[0.18em] text-indsoft uppercase mb-7">
+                    <span class="block w-7 h-px bg-ind"></span>Available for opportunities
+                </p>
+                
+                <h1 id="hero-heading" class="font-display font-extrabold text-5xl sm:text-6xl md:text-8xl leading-[0.9] tracking-tight mb-8">
+                    Hilmi<br>
+                    <span class="text-outline">Salsabilla</span>
+                </h1>
+                
+                <p class="text-base md:text-lg font-light text-muted max-w-xl mb-12 leading-relaxed">
+                    Information Systems student &amp; web developer.<br>
+                    Building <strong class="text-ink font-medium">meaningful digital products</strong> with PHP, JavaScript, and modern frameworks.
+                </p>
+                
+                <div class="flex gap-4 flex-wrap">
+                    <a href="pages/projects.html" class="inline-flex items-center gap-2 text-sm font-semibold tracking-wide px-7 py-3 rounded-lg bg-ind text-white hover:bg-[#4f52d8] hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(99,102,241,0.35)] transition-all">View Projects</a>
+                    <a href="pages/contact.html" class="inline-flex items-center gap-2 text-sm font-semibold tracking-wide px-7 py-3 rounded-lg bg-transparent text-muted border border-line2 hover:text-ink hover:border-white/25 hover:bg-white/5 hover:-translate-y-0.5 transition-all">Get in Touch</a>
+                </div>
+            </div>
+
+            <p class="absolute bottom-10 left-1/2 -translate-x-1/2 text-xs tracking-[0.18em] text-faint uppercase flex flex-col items-center gap-2.5" aria-hidden="true">
+                scroll
+                <span class="block w-px h-9 bg-gradient-to-b from-faint to-transparent"></span>
             </p>
         </section>
+
+        <div class="h-px w-full bg-line"></div>
 
         <!-- about -->
-        <section class="about" id="about" aria-labelledby="about-heading">
-            <h2 id="about-heading">About Me</h2>
-            <p>
-                Hi! I’m <strong>Hilmi</strong>, an Information Systems student passionate about web development and eager to grow my skills in building impactful digital solutions. Throughout my studies and personal projects, I have gained hands-on experience with <strong>HTML, CSS, JavaScript, PHP,</strong> and popular frameworks like <strong>CodeIgniter and Laravel.</strong>
-            </p>
-
-            <article>
-                <h3>Education</h3>
-                <p>
-                    Right now, I’m working toward my Bachelor’s degree in Information Systems at Metamedia University.
+        <section class="py-24 bg-surface" id="about" aria-labelledby="about-heading">
+            <div class="max-w-5xl mx-auto px-6 md:px-10">
+                <p class="flex items-center gap-2.5 text-xs font-medium tracking-[0.2em] text-indsoft uppercase mb-4">
+                    <span class="block w-5 h-px bg-ind"></span>About
                 </p>
-            </article>
-
-            <article>
-                <h3>Experience</h3>
-                <p>
-                    Completed an ICT internship at <strong>PT Semen Padang</strong> (<time datetime="2023-07">July</time>–<time datetime="2023-08">August 2023</time>) developing a web-based printer monitoring system using <em>PHP (CodeIgniter)</em>, <em>MySQL</em>, and <em>Bootstrap</em>.
-                </p>
-            </article>
                 
-            <article>
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>PHP (CodeIgniter & Laravel)</li>
-                    <li>GitHub & Version Control</li>
-                </ul>
-            </article>
+                <h2 id="about-heading" class="font-display font-bold text-4xl md:text-5xl tracking-tight mb-4">Who I Am</h2>
                 
-            <article>
-                <h3>Interest</h3>
-                <p>
-                    I love spending time building real projects while learning from <strong>Udemy</strong> courses — turning ideas into working web apps is what excites me most.
-                </p>
-            </article>
+                <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center mt-14">
+                    <div class="relative">
+                        <div class="absolute -inset-3 border border-inddim rounded-2xl pointer-events-none"></div>
+                        <div class="absolute inset-0 bg-gradient-to-br from-ind/10 to-transparent rounded-2xl pointer-events-none"></div>
+                        <img src="assets/images/profile.png" alt="Hilmi Salsabilla" class="w-full object-cover rounded-xl grayscale-[20%] contrast-105">
+                    </div>
+                    
+                    <div>
+                        <p class="text-base text-muted leading-loose mb-5">I'm <strong class="text-ink font-medium">Hilmi</strong>, an Information Systems student at Metamedia University passionate about web development, data-driven systems, and building things that actually work.</p>
+                        
+                        <p class="text-base text-muted leading-loose mb-5">My stack spans <strong class="text-ink font-medium">frontend and backend</strong> — from semantic HTML and responsive CSS to PHP frameworks like <strong class="text-ink font-medium">CodeIgniter and Laravel</strong>. Now deepening my full-stack ability at <strong class="text-ink font-medium">FSSE RevoU</strong> — React, Node.js, REST APIs, the works.</p>
+                        
+                        <!-- <p class="text-base text-muted leading-loose mb-5"></p> -->
+                        
+                        <div class="grid grid-cols-2 gap-3 mt-8">
+                            <div class="bg-card border border-line rounded-xl px-5 py-4">
+                                <p class="text-[0.7rem] tracking-wider text-faint uppercase mb-1">Location</p>
+                                <p class="text-sm font-medium text-ink">Indonesia</p>
+                            </div>
+                            
+                            <div class="bg-card border border-line rounded-xl px-5 py-4">
+                                <p class="text-[0.7rem] tracking-wider text-faint uppercase mb-1">Status</p>
+                                <p class="text-sm font-medium text-ink">Open to work</p>
+                            </div>
+                            
+                            <div class="bg-card border border-line rounded-xl px-5 py-4">
+                                <p class="text-[0.7rem] tracking-wider text-faint uppercase mb-1">Education</p>
+                                <p class="text-sm font-medium text-ink">Metamedia University</p>
+                            </div>
+                            
+                            <div class="bg-card border border-line rounded-xl px-5 py-4">
+                                <p class="text-[0.7rem] tracking-wider text-faint uppercase mb-1">Focus</p>
+                                <p class="text-sm font-medium text-ink">Full-Stack Dev</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-3 flex-wrap mt-8">
+                            <a href="pages/about.html" class="inline-flex items-center gap-2 text-sm font-semibold tracking-wide px-6 py-2.5 rounded-lg bg-transparent text-muted border border-line2 hover:text-ink hover:border-white/25 hover:bg-white/5 hover:-translate-y-0.5 transition-all">Read More</a>
+                            <a href="assets/document/cv-hilmi-salsabilla.pdf" download class="inline-flex items-center gap-2 text-sm font-semibold tracking-wide px-6 py-2.5 rounded-lg bg-ind text-white hover:bg-[#4f52d8] hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(99,102,241,0.35)] transition-all">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <div class="h-px w-full bg-line"></div>
+
+        <!-- skills -->
+        <section class="py-24" id="skills" aria-labelledby="skills-heading">
+            <div class="max-w-5xl mx-auto px-6 md:px-10">
+                <p class="flex items-center gap-2.5 text-xs font-medium tracking-[0.2em] text-indsoft uppercase mb-4">
+                    <span class="block w-5 h-px bg-ind"></span>Skills
+                </p>
+                
+                <h2 id="skills-heading" class="font-display font-bold text-4xl md:text-5xl tracking-tight mb-3">What I Work With</h2>
+                
+                <p class="text-base text-muted max-w-md leading-relaxed">
+                    A toolkit built through coursework, internships, and real-world projects.
+                </p>
+
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-14">
+                    <!-- frontend -->
+                    <div class="bg-card border border-line rounded-xl p-7 hover:border-ind/35 hover:-translate-y-1 transition-all">
+                        <div class="w-9 h-9 rounded-lg bg-inddim border border-ind/20 flex items-center justify-center mb-4 text-sm">
+                            ⬡
+                        </div>
+                        
+                        <h3 class="font-display font-bold text-sm tracking-wide mb-3.5 text-ink">Frontend</h3>
+                        
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-inddim border border-ind/30 text-indsoft">
+                                HTML5
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-inddim border border-ind/30 text-indsoft">
+                                CSS3
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-inddim border border-ind/30 text-indsoft">
+                                JavaScript
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                React
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                TypeScript
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                Bootstrap
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- backend -->
+                    <div class="bg-card border border-line rounded-xl p-7 hover:border-ind/35 hover:-translate-y-1 transition-all">
+                        <div class="w-9 h-9 rounded-lg bg-inddim border border-ind/20 flex items-center justify-center mb-4 text-sm">
+                            ◈
+                        </div>
+                        
+                        <h3 class="font-display font-bold text-sm tracking-wide mb-3.5 text-ink">Backend</h3>
+                        
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-inddim border border-ind/30 text-indsoft">
+                                PHP
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-inddim border border-ind/30 text-indsoft">
+                                CodeIgniter
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-inddim border border-ind/30 text-indsoft">
+                                Laravel
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                Node.js
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                Express
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                MySQL
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- tools & workflow -->
+                    <div class="bg-card border border-line rounded-xl p-7 hover:border-ind/35 hover:-translate-y-1 transition-all">
+                        <div class="w-9 h-9 rounded-lg bg-inddim border border-ind/20 flex items-center justify-center mb-4 text-sm">
+                            ◎
+                        </div>
+                        
+                        <h3 class="font-display font-bold text-sm tracking-wide mb-3.5 text-ink">Tools &amp; Workflow</h3>
+                        
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-inddim border border-ind/30 text-indsoft">
+                                Git
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-inddim border border-ind/30 text-indsoft">
+                                GitHub
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                VS Code
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                Vercel
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                Figma
+                            </span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                CLI
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="h-px w-full bg-line"></div>
 
         <!-- projects -->
-        <section class="projects" id="projects" aria-labelledby="projects-heading">
-            <h2 id="projects-heading">Projects</h2>
-            <p>Some of my personal and course-based projects:</p>
+        <section class="py-24 bg-surface" id="projects" aria-labelledby="projects-heading">
+            <div class="max-w-5xl mx-auto px-6 md:px-10">
+                <p class="flex items-center gap-2.5 text-xs font-medium tracking-[0.2em] text-indsoft uppercase mb-4">
+                    <span class="block w-5 h-px bg-ind"></span>Projects
+                </p>
+                
+                <h2 id="projects-heading" class="font-display font-bold text-4xl md:text-5xl tracking-tight mb-4">
+                    Things I've Built
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-6 mt-14">
+                    <!-- project card -->
+                    <article class="md:col-span-2 grid md:grid-cols-2 bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-1 transition-all group">
+                        <!-- project image -->
+                        <div class="border-b md:border-b-0 md:border-r border-line min-h-[260px] overflow-hidden">
+                            <img src="assets/preview/projects/haven.png" alt="Preview website for Haven Room Rental Platform" class="w-full h-full object-cover grayscale-[30%] brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all">
+                        </div>
+
+                        <!-- project details -->
+                        <div class="p-7 flex flex-col">
+                            <!-- project info -->
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">Featured Project</p>
+                            <h3 class="font-display font-bold text-lg tracking-tight mb-2.5">Haven — Room Rental Platform</h3>
+                            <p class="text-sm text-muted leading-relaxed mb-4 flex-1">
+                                Full-stack room rental platform — Next.js frontend with booking flow, admin dashboard, and a Node.js + Express backend with RESTful API. Built as capstone for RevoU FSSE.
+                            </p>
+                            
+                            <!-- techs -->
+                            <div class="flex flex-wrap gap-1.5 mb-5">
+                                <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                    Next.js
+                                </span>
+                                <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                    TypeScript
+                                </span>
+                                <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                    Node.js
+                                </span>
+                                <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                    PostgreSQL
+                                </span>
+                            </div>
+                            
+                            <!-- links -->
+                            <div class="flex gap-2 flex-wrap mt-auto">
+                                <a href="https://crack-fe-hilmisalsabilla.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-3 py-1.5 hover:text-indsoft hover:border-ind/35 hover:bg-inddim transition-all">
+                                    ↗ Live Demo
+                                </a>
+                                
+                                <a href="https://github.com/HilmiSalsabilla/crack-fe-HilmiSalsabilla" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-3 py-1.5 hover:text-indsoft hover:border-ind/35 hover:bg-inddim transition-all">
+                                    Frontend
+                                </a>
+                                
+                                <a href="https://github.com/HilmiSalsabilla/crack-be-HilmiSalsabilla" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-3 py-1.5 hover:text-indsoft hover:border-ind/35 hover:bg-inddim transition-all">
+                                    Backend
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- project card -->
+                    <article class="bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-1 transition-all flex flex-col group">
+                        <!-- project image -->
+                        <div class="aspect-video border-b border-line overflow-hidden">
+                            <img src="assets/preview/projects/revoshop.png" alt="Preview website for RevoShop e-Commerce" class="w-full h-full object-cover grayscale-[30%] brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all">
+                        </div>
+
+                        <!-- project details -->
+                        <div class="p-6 flex flex-col flex-1">
+                            <!-- project info -->
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">E-Commerce</p>
+                            <h3 class="font-display font-bold text-lg tracking-tight mb-2.5">RevoShop</h3>
+                            <p class="text-sm text-muted leading-relaxed mb-4 flex-1">
+                                Full-stack e-commerce with product browsing, cart, and checkout. Built with Next.js + React 19.
+                            </p>
+                        
+                            <!-- technologies -->
+                            <div class="flex flex-wrap gap-1.5 mb-5">
+                                <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                    Next.js
+                                </span>
+                                <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                    React
+                                </span>
+                                <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                    TypeScript
+                                </span>
+                            </div>
+                            
+                            <!-- links -->
+                            <div class="flex gap-2 flex-wrap mt-auto">
+                                <a href="https://milestone-3-hilmisalsabilla.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-3 py-1.5 hover:text-indsoft hover:border-ind/35 hover:bg-inddim transition-all">
+                                    ↗ Live
+                                </a>
+                                
+                                <a href="https://github.com/HilmiSalsabilla/milestone-3-HilmiSalsabilla" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-3 py-1.5 hover:text-indsoft hover:border-ind/35 hover:bg-inddim transition-all">
+                                    Repo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- project card -->
+                    <article class="bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-1 transition-all flex flex-col group">
+                        <!-- project image -->
+                        <div class="aspect-video border-b border-line overflow-hidden">
+                            <img src="assets/preview/projects/revofun.png" alt="Preview website for RevoFun Gaming" class="w-full h-full object-cover grayscale-[30%] brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all">
+                        </div>
             
-            <article>
-                <h3>JavaScript 30 Projects in 30 Days</h3>
-                <p>
-                    A 30-day challenge building mini projects with HTML, CSS, and Vanilla JavaScript. See them live: <a href="https://hilmisalsabilla.github.io/HTML-Projects/" target="_blank" rel="noopener noreferrer">JavaScript 30 Projects</a>.
-                </p>
-            </article>
+                        <!-- project details -->
+                        <div class="p-6 flex flex-col flex-1">
+                            <!-- project info -->
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">Gaming Platform</p>
+                            <h3 class="font-display font-bold text-lg tracking-tight mb-2.5">RevoFun Gaming</h3>
+                            <p class="text-sm text-muted leading-relaxed mb-4 flex-1">
+                                Browser-based casual gaming hub. Lightweight, fully client-side, built with vanilla JavaScript.
+                            </p>
+                            
+                            <!-- technologies -->
+                            <div class="flex flex-wrap gap-1.5 mb-5">
+                                <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                    HTML
+                                </span>
+                                <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                    CSS
+                                </span>
+                                <span class="text-xs font-medium px-2.5 py-1 rounded bg-white/5 border border-line2 text-muted">
+                                    JavaScript
+                                </span>
+                            </div>
 
-            <article>
-                <h3>Bookstore Web Management</h3>
-                <p>
-                    A <strong>CodeIgniter 3</strong>-based bookstore management app featuring CRUD, login, and registration. 
-                    Explore on <a href="https://github.com/HilmiSalsabilla/bookstore" target="_blank" rel="noopener noreferrer">GitHub Repository</a>.
-                </p>
-            </article>
-
-            <article>
-                <h3>One Direction Fan Page</h3>
-                <p>
-                    A semantic HTML exercise project. Visit: <a href="https://hilmisalsabilla.github.io/Lecture2-HTMLSemantic/" target="_blank" rel="noopener noreferrer">Lecture 2 - HTML Semantic</a>.
-                </p>
-            </article>
+                            <!-- links -->
+                            <div class="flex gap-2 flex-wrap mt-auto">
+                                <a href="https://revou-fsse-oct25.github.io/milestone-2-HilmiSalsabilla/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-3 py-1.5 hover:text-indsoft hover:border-ind/35 hover:bg-inddim transition-all">
+                                    ↗ Live
+                                </a>
+                                
+                                <a href="https://github.com/HilmiSalsabilla/milestone-2-HilmiSalsabilla" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-3 py-1.5 hover:text-indsoft hover:border-ind/35 hover:bg-inddim transition-all">
+                                    Repo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="pages/projects.html" class="inline-flex items-center gap-2 text-sm font-semibold tracking-wide px-6 py-2.5 rounded-lg bg-transparent text-muted border border-line2 hover:text-ink hover:border-white/25 hover:bg-white/5 hover:-translate-y-0.5 transition-all">
+                        View All Projects
+                    </a>
+                </div>
+            </div>
         </section>
+
+        <div class="h-px w-full bg-line"></div>
 
         <!-- contact -->
-        <section class="contact" id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Contact</h2>
-            <p>
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out using the form below or through my social links.
-            </p>
+        <section class="py-24" id="contact" aria-labelledby="contact-heading">
+            <div class="max-w-5xl mx-auto px-6 md:px-10">
+                <p class="flex items-center gap-2.5 text-xs font-medium tracking-[0.2em] text-indsoft uppercase mb-4">
+                    <span class="block w-5 h-px bg-ind"></span>Contact
+                </p>
+                
+                <h2 id="contact-heading" class="font-display font-bold text-4xl md:text-5xl tracking-tight mb-4">Let's Work Together</h2>
 
-            <form action="#" method="post" aria-labelledby="contact-heading">
-                <fieldset>
-                    <legend>Message Me!</legend>
+                <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start mt-14">
+                    <!-- contact info -->
+                    <section>
+                        <p class="text-base text-muted leading-loose mb-8">
+                            Open to internships, freelance, and full-time roles. Have something in mind — or just want to say hello? I'd love to hear from you.
+                        </p>
+                        
+                        <div class="flex flex-col gap-3">
+                            <!-- Email -->
+                            <a href="mailto:hilmisalsabilla6@gmail.com" class="flex items-center gap-3.5 text-sm text-muted border border-line rounded-xl px-4 py-3.5 hover:text-ink hover:border-ind/35 hover:bg-card transition-all">
+                                <span class="w-8 h-8 rounded-md bg-inddim flex items-center justify-center text-sm text-indsoft flex-shrink-0">
+                                    ✉
+                                </span>
+                                <span class="flex-1">
+                                    <span class="block text-[0.65rem] tracking-wider text-faint uppercase mb-0.5">Email</span>
+                                    <span class="block text-ink text-sm">hilmisalsabilla6@gmail.com</span>
+                                </span>
+                            </a>
+                        
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/hilmi-salsabilla/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3.5 text-sm text-muted border border-line rounded-xl px-4 py-3.5 hover:text-ink hover:border-ind/35 hover:bg-card transition-all">
+                                <span class="w-8 h-8 rounded-md bg-inddim flex items-center justify-center text-sm text-indsoft flex-shrink-0">
+                                    in
+                                </span>
+                                <span class="flex-1">
+                                    <span class="block text-[0.65rem] tracking-wider text-faint uppercase mb-0.5">LinkedIn</span>
+                                    <span class="block text-ink text-sm">hilmi-salsabilla</span>
+                                </span>
+                            </a>
+                        
+                            <!-- GitHub -->
+                            <a href="https://github.com/HilmiSalsabilla" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3.5 text-sm text-muted border border-line rounded-xl px-4 py-3.5 hover:text-ink hover:border-ind/35 hover:bg-card transition-all">
+                                <span class="w-8 h-8 rounded-md bg-inddim flex items-center justify-center text-sm text-indsoft flex-shrink-0">
+                                    gh
+                                </span>
+                                <span class="flex-1">
+                                    <span class="block text-[0.65rem] tracking-wider text-faint uppercase mb-0.5">GitHub</span>
+                                    <span class="block text-ink text-sm">HilmiSalsabilla</span>
+                                </span>
+                            </a>
+                        </div>
+                    </section>
 
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Your name" autocomplete="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="email@here.com" autocomplete="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" placeholder="Your message here" required></textarea>
-
-                    <button type="submit">Send Message</button>
-                    <button type="reset">Reset</button>
-                </fieldset>
-            </form>
+                    <!-- contact form -->
+                    <section>
+                        <form onsubmit="handleForm(event)" class="flex flex-col gap-1">
+                            <div class="mb-5">
+                                <label for="name" class="block text-[0.72rem] font-medium tracking-wider uppercase text-faint mb-2">
+                                    Your Name
+                                </label>
+                                <input type="text" id="name" placeholder="e.g. Budi Santoso" required class="w-full bg-card border border-line rounded-lg px-4 py-3.5 text-sm text-ink placeholder-faint outline-none focus:border-ind focus:ring-4 focus:ring-indglow transition-all">
+                            </div>
+                        
+                            <div class="mb-5">
+                                <label for="email" class="block text-[0.72rem] font-medium tracking-wider uppercase text-faint mb-2">
+                                    Email Address
+                                </label>
+                                <input type="email" id="email" placeholder="you@company.com" required class="w-full bg-card border border-line rounded-lg px-4 py-3.5 text-sm text-ink placeholder-faint outline-none focus:border-ind focus:ring-4 focus:ring-indglow transition-all">
+                            </div>
+                        
+                            <div class="mb-5">
+                                <label for="message" class="block text-[0.72rem] font-medium tracking-wider uppercase text-faint mb-2">
+                                    Message
+                                </label>
+                                <textarea id="message" placeholder="Tell me about your project or opportunity…" required class="w-full min-h-[130px] bg-card border border-line rounded-lg px-4 py-3.5 text-sm text-ink placeholder-faint outline-none focus:border-ind focus:ring-4 focus:ring-indglow transition-all resize-none"></textarea>
+                            </div>
+                            
+                            <button type="submit" id="send-btn" class="w-full justify-center inline-flex items-center gap-2 text-sm font-semibold tracking-wide px-7 py-3.5 rounded-lg bg-ind text-white hover:bg-[#4f52d8] hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(99,102,241,0.35)] transition-all">
+                                Send Message
+                            </button>
+                            
+                            <p id="form-status" class="hidden text-sm text-muted mt-3"></p>
+                        </form>
+                    </section>
+                </div>
+            </div>
         </section>
-
-        <a href="#top" class="back-to-top" aria-label="Back to top of page">↑</a>
     </main>
 
     <!-- footer -->
-    <footer class="site-footer">
-        <p>© 2025 <strong>Hilmi Salsabilla</strong>. All rights reserved.</p>
-
-        <address>
-            <ul class="social-links">
-                <li>
-                    <a href="https://www.linkedin.com/in/hilmi-salsabilla/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-                        <img src="assets/logo/linkedin.png" alt="LinkedIn Logo" loading="lazy">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/hsalsabillaa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
-                        <img src="assets/logo/instagram.png" alt="Instagram Logo" loading="lazy">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/HilmiSalsabilla" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-                        <img src="assets/logo/github.png" alt="GitHub Logo" loading="lazy">
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:hilmisalsabilla6@gmail.com" aria-label="Email Hilmi Salsabilla">
-                        <img src="assets/logo/email.png" alt="Email Logo" loading="lazy">
-                    </a>
-                </li>
-            </ul>
-        </address>
+    <footer class="bg-bg border-t border-line py-10">
+        <div class="max-w-5xl mx-auto px-6 md:px-10 flex justify-between items-center flex-wrap gap-4">
+            <p class="text-sm text-faint">
+                © 2026 <strong class="text-indsoft font-medium">Hilmi Salsabilla</strong>. Crafted with intent.
+            </p>
+            
+            <!-- pages navigation -->
+            <nav class="flex gap-6" aria-label="Footer Navigation">
+                <a href="pages/about.html" class="text-sm text-faint hover:text-indsoft transition">About</a>
+                <a href="pages/projects.html" class="text-sm text-faint hover:text-indsoft transition">Projects</a>
+                <a href="pages/contact.html" class="text-sm text-faint hover:text-indsoft transition">Contact</a>
+                <a href="assets/document/cv-hilmi-salsabilla.pdf" download class="text-sm text-faint hover:text-indsoft transition">Download CV</a>
+            </nav>
+        </div>
     </footer>
 
-    <script src="assets/js/navbar_scroll.js"></script>
+    <a href="#" class="btt fixed bottom-8 right-8 z-50 w-11 h-11 rounded-full bg-surface border border-line2 flex items-center justify-center text-muted text-lg hover:bg-ind hover:border-ind hover:text-white transition-all" id="btt" aria-label="Back to top">↑</a>
+
+    <script src="assets/js/nav.js"></script>
 </body>
 </html>
