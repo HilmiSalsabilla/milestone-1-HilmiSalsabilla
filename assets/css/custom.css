@@ -1,0 +1,62 @@
+/* Things Tailwind utilities can't express cleanly */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+html{
+  scroll-behavior:smooth
+}
+
+.text-outline{
+  color:transparent;
+  -webkit-text-stroke:1.5px #818cf8;
+}
+.text-outline-bg{
+  color:transparent;
+  -webkit-text-stroke:1px rgba(99,102,241,0.1);
+}
+
+nav.site-nav{
+  transition:transform .3s ease
+}
+
+nav.site-nav.hide{
+  transform:translateY(-100%)
+}
+
+.btt{
+  transition:opacity .25s,transform .25s;
+  opacity:0;
+  pointer-events:none
+}
+
+.btt.show{
+  opacity:1;
+  pointer-events:auto
+}
+
+::-webkit-scrollbar{
+  width:8px
+}
+
+::-webkit-scrollbar-track{
+  background:#050810
+}
+
+::-webkit-scrollbar-thumb{
+  background:#111c30;
+  border-radius:8px
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:rgba(99,102,241,0.3)
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{
+    transition:none!important;
+    animation:none!important
+  }
+  
+  html{
+    scroll-behavior:auto
+  }
+}
