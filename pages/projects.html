@@ -7,322 +7,378 @@
     <!-- browser tab -->
     <title>Projects | Hilmi Salsabilla</title>
     <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/js/tw-config.js"></script>
+    <link rel="stylesheet" href="../assets/css/custom.css">
 
     <!-- seo meta -->
     <meta name="description" content="Explore web development projects by Hilmi Salsabilla — showcasing hands-on experience in HTML, CSS, JavaScript, and PHP frameworks.">
     <meta name="keywords" content="Hilmi Salsabilla, web developer, portfolio, projects, Information Systems">
     <meta name="author" content="Hilmi Salsabilla">
 </head>
-<body id="top">
+<body class="bg-bg text-ink font-body leading-relaxed overflow-x-hidden pt-[72px]">
     <!-- header -->
-    <header class="site-header">
-        <h1 class="logo">
-            <a href="../index.html" aria-label="Homepage of Hilmi Salsabilla">Hilmi Salsabilla</a>
-        </h1>
-
-        <nav class="site-nav" aria-label="Main Navigation">
-            <ul class="list-nav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html" aria-current="page">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="../assets/document/cv-hilmi-salsabilla.pdf" download>Download CV</a></li>
+    <header>
+        <nav class="site-nav fixed top-0 left-0 right-0 z-[100] flex justify-between items-center px-6 md:px-12 py-4 bg-bg/80 backdrop-blur-xl border-b border-line">
+            <a href="../index.html" class="font-display font-extrabold text-lg tracking-wide text-ink">H<span class="text-indsoft">.</span>S</a>
+            
+            <ul class="hidden md:flex gap-1 list-none">
+                <li>
+                    <a href="../index.html" class="text-sm font-medium px-3.5 py-1.5 rounded-md text-muted hover:text-ink hover:bg-white/5 transition">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="text-sm font-medium px-3.5 py-1.5 rounded-md text-muted hover:text-ink hover:bg-white/5 transition">About</a>
+                </li>
+                <li>
+                    <a href="projects.html" class="text-sm font-medium px-3.5 py-1.5 rounded-md text-indsoft bg-white/5" aria-current="page">Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="text-sm font-semibold px-4 py-1.5 rounded-md text-indsoft border border-ind/35 hover:bg-indglow hover:text-ink transition">Contact</a>
+                </li>
+                <li>
+                    <a href="../assets/document/cv-hilmi-salsabilla.pdf" download class="text-sm font-medium px-3.5 py-1.5 rounded-md text-muted hover:text-ink hover:bg-white/5 transition">Download CV</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <!-- main -->
-    <main id="main-content">
-        <section class="project" aria-labelledby="projects-heading">
-            <h2 id="projects-heading">My projects</h2>
-            <p>
-                Here are some of the projects I’ve worked on — focusing on web development, user experience, and information systems.
-            </p>
+    <main>
+        <!-- page hero -->
+        <section class="py-20 bg-surface border-b border-line" aria-labelledby="projects-hero">
+            <div class="max-w-5xl mx-auto px-6 md:px-10">
+                <p class="flex items-center gap-2.5 text-xs font-medium tracking-[0.2em] text-indsoft uppercase mb-4">
+                    <span class="block w-5 h-px bg-ind"></span>Projects
+                </p>
+                
+                <h1 id="projects-hero" class="font-display font-extrabold text-5xl md:text-7xl leading-[0.95] tracking-tight mb-6">
+                    Things I've<br><span class="text-outline">Built</span>
+                </h1>
+                
+                <div class="max-w-xl mb-10">
+                    <p class="text-base text-muted leading-relaxed">
+                        A collection of projects spanning frontend, backend, and full-stack work — built through coursework, internships, and self-directed learning.
+                    </p>
+                </div>
 
-            <!-- internal nav -->
-            <aside>
-                <h3 id="section-nav-heading">Jump to Project</h3>
-                <nav aria-labelledby="section-nav-heading">
-                    <ul>
-                        <li><a href="#revofun-project">RevoFun Gaming</a></li>
-                        <li><a href="#revoshop-project">RevoShop</a></li>
-                        <li><a href="#revobank-project">RevoBank API</a></li>
-                        <li><a href="#crack-project">Haven Frontend</a></li>
-                        <li><a href="#haven-be-project">Haven Backend</a></li>
-                        <li><a href="#fanpage-project">1D Fanpage Project</a></li>
-                        <li><a href="#taskflow-project">TaskFlow Project</a></li>
-                        <li><a href="#forum-project">Forum Project</a></li>
-                        <li><a href="#html-project">HTML Project</a></li>
-                        <li><a href="#todos-project">ToDos Project</a></li>
-                        <li><a href="#bookstore-project">Bookstore Project</a></li>
+                <!-- internal navigation -->
+                <nav class="bg-card border border-line rounded-xl px-7 py-6" aria-labelledby="jump-heading">
+                    <h3 id="jump-heading" class="font-display text-xs tracking-[0.14em] uppercase text-indsoft mb-4 font-bold">
+                        Jump to Project
+                    </h3>
+                    
+                    <!-- project links-list -->
+                    <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5 list-none">
+                        <li>
+                            <a href="#haven-fe" class="block text-sm font-medium text-muted px-3 py-2 rounded-md border-l-2 border-transparent hover:text-indsoft hover:bg-inddim hover:border-ind transition-all">
+                                Haven Frontend
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#haven-be" class="block text-sm font-medium text-muted px-3 py-2 rounded-md border-l-2 border-transparent hover:text-indsoft hover:bg-inddim hover:border-ind transition-all">
+                                Haven Backend
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#revofun" class="block text-sm font-medium text-muted px-3 py-2 rounded-md border-l-2 border-transparent hover:text-indsoft hover:bg-inddim hover:border-ind transition-all">
+                                RevoFun Gaming
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#revoshop" class="block text-sm font-medium text-muted px-3 py-2 rounded-md border-l-2 border-transparent hover:text-indsoft hover:bg-inddim hover:border-ind transition-all">
+                                RevoShop
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#revobank" class="block text-sm font-medium text-muted px-3 py-2 rounded-md border-l-2 border-transparent hover:text-indsoft hover:bg-inddim hover:border-ind transition-all">
+                                RevoBank API
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#fanpage" class="block text-sm font-medium text-muted px-3 py-2 rounded-md border-l-2 border-transparent hover:text-indsoft hover:bg-inddim hover:border-ind transition-all">
+                                1D Fanpage
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#taskflow" class="block text-sm font-medium text-muted px-3 py-2 rounded-md border-l-2 border-transparent hover:text-indsoft hover:bg-inddim hover:border-ind transition-all">
+                                TaskFlow
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#forum" class="block text-sm font-medium text-muted px-3 py-2 rounded-md border-l-2 border-transparent hover:text-indsoft hover:bg-inddim hover:border-ind transition-all">
+                                Forum
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#js30" class="block text-sm font-medium text-muted px-3 py-2 rounded-md border-l-2 border-transparent hover:text-indsoft hover:bg-inddim hover:border-ind transition-all">
+                                JS30 Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#todos" class="block text-sm font-medium text-muted px-3 py-2 rounded-md border-l-2 border-transparent hover:text-indsoft hover:bg-inddim hover:border-ind transition-all">
+                                ToDos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#bookstore" class="block text-sm font-medium text-muted px-3 py-2 rounded-md border-l-2 border-transparent hover:text-indsoft hover:bg-inddim hover:border-ind transition-all">
+                                Bookstore
+                            </a>
+                        </li>
                     </ul>
                 </nav>
-            </aside>
-
-            <!-- haven fe -->
-            <section class="project-card" id="haven-fe-project">
-                <figure>
-                    <img src="../assets/preview/projects/haven.png" alt="Preview of Haven Room Rental Platform" loading="lazy">
-                    <figcaption>Modern room rental booking platform</figcaption>
-                </figure>
-
-                <article class="project-info">
-                    <h3>Haven — Room Rental Frontend</h3>
-                    <p>
-                        A modern room rental booking platform built with Next.js 16, TypeScript, and Tailwind CSS. Users can browse available rooms, make bookings, and manage their reservations. Admins can manage listings, approve bookings, and view analytics.
-                    </p>
-                    <ul class="project-link">
-                        <li>
-                            🔗 <a href="https://crack-fe-hilmisalsabilla.vercel.app/" target="_blank" rel="noopener noreferrer">View Live Project</a>
-                        </li>
-                        <li>
-                            🔗 <a href="https://github.com/HilmiSalsabilla/crack-fe-HilmiSalsabilla" target="_blank" rel="noopener noreferrer">View Source Code</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <!-- haven be -->
-            <section class="project-card" id="haven-be-project">
-                <!-- <figure>
-                    <img src="#" alt="Preview of Haven Room Rental Backend" loading="lazy">
-                    <figcaption>Node.js backend for room rental platform</figcaption>
-                </figure> -->
-
-                <article class="project-info">
-                    <h3>Haven — Room Rental Backend</h3>
-                    <p>
-                        The backend for the Haven room rental platform, built with Node.js and Express. It handles user authentication, room management, booking processing, and provides a RESTful API for the frontend to interact with.
-                    </p>
-                    <ul class="project-link">
-                        <li>
-                            🔗 <a href="https://github.com/HilmiSalsabilla/crack-be-HilmiSalsabilla" target="_blank" rel="noopener noreferrer">View Source Code</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <!-- revofun -->
-            <section class="project-card" id="revofun-project">
-                <figure>
-                    <img src="../assets/preview/projects/revofun.png" alt="Preview of RevoFun Gaming Platform" loading="lazy">
-                    <figcaption>Lightweight browser-based gaming platform</figcaption>
-                </figure>
-
-                <article class="project-info">
-                    <h3>RevoFun Gaming</h3>
-                    <p>
-                        RevoFun Gaming is a lightweight, browser-based gaming platform featuring fun casual games for all ages. The goal is to provide engaging experiences that are easy to jump into anytime.
-                    </p>
-                    <ul class="project-link">
-                        <li>
-                            🔗 <a href="https://revou-fsse-oct25.github.io/milestone-2-HilmiSalsabilla/" target="_blank" rel="noopener noreferrer">View Live Project</a>
-                        </li>
-                        <li>
-                            🔗 <a href="https://github.com/HilmiSalsabilla/milestone-2-HilmiSalsabilla" target="_blank" rel="noopener noreferrer">View Source Code</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <!-- revoshop -->
-            <section class="project-card" id="revoshop-project">
-                <figure>
-                    <img src="../assets/preview/projects/revoshop.png" alt="Preview of RevoShop E-commerce Platform" loading="lazy">
-                    <figcaption>Full-stack e-commerce platform</figcaption>
-                </figure>
-
-                <article class="project-info">
-                    <h3>RevoShop</h3>
-                    <p>
-                        A full-stack e-commerce platform built with Next.js, React 19, and TypeScript as Milestone 3 of the RevoU Full Stack Software Engineering program. It features product browsing, shopping cart functionality, and a secure checkout process. The project emphasizes responsive design and seamless user experience across devices.
-                    </p>
-                    <ul class="project-link">
-                        <li>
-                            🔗 <a href="https://milestone-3-hilmisalsabilla.vercel.app/" target="_blank" rel="noopener noreferrer">View Live Project</a>
-                        </li>
-                        <li>
-                            🔗 <a href="https://github.com/HilmiSalsabilla/milestone-3-HilmiSalsabilla" target="_blank" rel="noopener noreferrer">View Source Code</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <!-- revobank api -->
-            <section class="project-card" id="revobank-project">
-                <!-- <figure>
-                    <img src="#" alt="Preview of RevoBank API Project" loading="lazy">
-                    <figcaption>RESTful API for banking operations</figcaption>
-                </figure> -->
-
-                <article class="project-info">
-                    <h3>RevoBank API</h3>
-                    <p>
-                        RevoBank API is a RESTful API designed to handle basic banking operations such as account management, transactions, and user authentication. Built with Node.js and Express, it provides a secure and efficient backend for financial applications.
-                    </p>
-                    <ul class="project-link">
-                        <li>
-                            🔗 <a href="https://github.com/HilmiSalsabilla/milestone-4-HilmiSalsabilla" target="_blank" rel="noopener noreferrer">View Source Code</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <!-- fan page -->
-            <section class="project-card" id="fanpage-project">
-                <figure>
-                    <img src="../assets/preview/projects/fanpage.png" alt="Preview of 1D Fan Page" loading="lazy">
-                    <figcaption>Semantic HTML fan page for accessibility practice</figcaption>
-                </figure>
-
-                <article class="project-info">
-                    <h3>One Direction Fan Page</h3>
-                    <p>
-                        A fun, semantic HTML project designed to practice accessibility and structure using HTML5 and CSS basics.
-                    </p>
-                    <ul class="project-link">
-                        <li>
-                            🔗 <a href="https://hilmisalsabilla.github.io/Lecture2-HTMLSemantic/" target="_blank" rel="noopener noreferrer">Visit Fan Page</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <!-- taskflow -->
-            <section class="project-card" id="taskflow-project">
-                <figure>
-                    <img src="../assets/preview/projects/taskflow.png" alt="Preview of Taskflow Project" loading="lazy">
-                    <figcaption>Task management app using HTML, CSS, and JavaScript</figcaption>
-                </figure>
-
-                <article class="project-info">
-                    <h3>Taskflow</h3>
-                    <p>
-                        <strong>TaskFlow</strong> is a task management web app that helps users organize and track daily activities efficiently. Built with HTML, CSS, and JavaScript — featuring a responsive and intuitive UI.
-                    </p>
-                    <ul class="project-link">
-                        <li>
-                            🔗 <a href="https://github.com/HilmiSalsabilla/taskflow" target="_blank" rel="noopener noreferrer">Taskflow GitHub Repository</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <!-- forum -->
-            <section class="project-card" id="forum-project">
-                <figure>
-                    <img src="../assets/preview/projects/forum.png" alt="Preview of Forum Web App" loading="lazy">
-                    <figcaption>Student discussion platform prototype</figcaption>
-                </figure>
-
-                <article class="project-info">
-                    <h3>Forum Web Application</h3>
-                    <p>
-                        A discussion platform prototype for students to share ideas, questions, and resources. Focused on user interaction and front-end layout structure.
-                    </p>
-                    <ul class="project-link">
-                        <li>
-                            🔗 <a href="https://github.com/HilmiSalsabilla/forum" target="_blank" rel="noopener noreferrer">Forum GitHub Repositories</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <!-- html projects -->
-            <section class="project-card" id="html-project">
-                <figure>
-                    <img src="../assets/preview/projects/html.png" alt="Preview of HTML Projects Collection" loading="lazy">
-                    <figcaption>30 mini projects using JavaScript, HTML, and CSS</figcaption>
-                </figure>
-
-                <article class="project-info">
-                    <h3>JavaScript 30 Projects in 30 Days</h3>
-                    <p>
-                        A 30-day mini project challenge using <strong>HTML, CSS, and JavaScript</strong>. Built to strengthen DOM manipulation and problem-solving skills.
-                    </p>
-                    <ul class="project-link">
-                        <li>
-                            🔗 <a href="https://hilmisalsabilla.github.io/HTML-Projects/" target="_blank" rel="noopener noreferrer">View Live Projects</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <!-- to-dos -->
-            <section class="project-card" id="todos-project">
-                <figure>
-                    <img src="../assets/preview/projects/todos.png" alt="Preview of Todos project" loading="lazy">
-                    <figcaption>Lightweight JavaScript-based task list app</figcaption>
-                </figure>
-
-                <article class="project-info">
-                    <h3>ToDos</h3>
-                    <p>
-                        <strong>ToDos</strong> is a simple and lightweight task list app to practice JavaScript DOM manipulation. Users can add, remove, and mark tasks as complete.
-                    </p>
-                    <ul class="project-link">
-                        <li>
-                            🔗 <a href="https://github.com/HilmiSalsabilla/todos" target="_blank" rel="noopener noreferrer">ToDos GitHub Repositories</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-            
-            <!-- bookstore -->
-            <section class="project-card" id="bookstore-project">
-                <figure>
-                    <img src="../assets/preview/projects/bookstore.png" alt="Preview of Bookstore Web Management project" loading="lazy">
-                    <figcaption>CRUD web app built with CodeIgniter 3</figcaption>
-                </figure>
-
-                <article class="project-info">
-                    <h3>Bookstore Web Management</h3>
-                    <p>
-                        A <strong>CodeIgniter 3</strong>-based CRUD web application for managing books, users, and orders. Includes authentication, admin dashboard, and database integration.
-                    </p>
-                    <ul class="project-link">
-                        <li>
-                            🔗 <a href="https://github.com/HilmiSalsabilla/bookstore" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
+            </div>
         </section>
+         
+        <!-- projects -->
+        <section class="py-24">
+            <div class="max-w-5xl mx-auto px-6 md:px-10">
+                <div class="flex flex-col gap-6">
+                    <!-- haven fe -->
+                    <section id="haven-fe" class="scroll-mt-28 grid md:grid-cols-[340px_1fr] bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-0.5 transition-all group">
+                        <figure class="border-b md:border-b-0 md:border-r border-line aspect-video md:aspect-auto overflow-hidden">
+                            <img src="../assets/preview/projects/haven.png" alt="Preview of Haven Room Rental Platform" loading="lazy" class="w-full h-full object-cover grayscale-[30%] brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all">
+                            <figcaption>Modern room rental booking platform</figcaption>
+                        </figure>
 
-        <a href="#top" class="back-to-top" aria-label="Back to top of page">↑</a>
+                        <article class="p-7 md:p-8 flex flex-col justify-center">
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">Featured · Frontend</p>
+                            <h3 class="font-display font-bold text-xl tracking-tight mb-3 text-ink">
+                                Haven — Room Rental Frontend
+                            </h3>
+                            <p class="text-sm text-muted leading-relaxed mb-5">
+                                A modern room rental booking platform built with Next.js 16, TypeScript, and Tailwind CSS. Users can browse available rooms, make bookings, and manage their reservations. Admins can manage listings, approve bookings, and view analytics.
+                            </p>
+                            
+                            <div class="flex gap-2 flex-wrap">
+                                <a href="https://crack-fe-hilmisalsabilla.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white bg-ind rounded-md px-4 py-2 hover:bg-[#4f52d8] hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(99,102,241,0.3)] transition-all">↗ Live Demo</a>
+                                <a href="https://github.com/HilmiSalsabilla/crack-fe-HilmiSalsabilla" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-4 py-2 hover:text-ink hover:border-white/25 hover:bg-white/5 transition-all">Source Code</a>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- haven be -->
+                    <section id="haven-be" class="scroll-mt-28 bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-0.5 transition-all">
+                        <article class="p-7 md:p-8 flex flex-col justify-center">
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">Featured · Backend</p>
+                            <h3 class="font-display font-bold text-xl tracking-tight mb-3 text-ink">
+                                Haven — Room Rental Backend
+                            </h3>
+                            <p class="text-sm text-muted leading-relaxed mb-5">
+                                The backend for the Haven room rental platform, built with Node.js and Express. Handles user authentication, room management, booking processing, and provides a RESTful API for the frontend.
+                            </p>
+                            
+                            <div class="flex gap-2 flex-wrap">
+                                <a href="https://github.com/HilmiSalsabilla/crack-be-HilmiSalsabilla" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-4 py-2 hover:text-ink hover:border-white/25 hover:bg-white/5 transition-all">Source Code</a>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- revofun -->
+                    <section id="revofun" class="scroll-mt-28 grid md:grid-cols-[340px_1fr] bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-0.5 transition-all group">
+                        <figure class="border-b md:border-b-0 md:border-r border-line aspect-video md:aspect-auto overflow-hidden">
+                            <img src="../assets/preview/projects/revofun.png" alt="Preview of RevoFun Gaming Platform" loading="lazy" class="w-full h-full object-cover grayscale-[30%] brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all">
+                            <figcaption>Lightweight browser-based gaming platform</figcaption>
+                        </figure>
+
+                        <article class="p-7 md:p-8 flex flex-col justify-center">
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">Gaming Platform</p>
+                            <h3 class="font-display font-bold text-xl tracking-tight mb-3 text-ink">
+                                RevoFun Gaming
+                            </h3>
+                            <p class="text-sm text-muted leading-relaxed mb-5">
+                                A lightweight, browser-based gaming platform featuring fun casual games for all ages. The goal: engaging experiences that are easy to jump into anytime.
+                            </p>
+                            
+                            <div class="flex gap-2 flex-wrap">
+                                <a href="https://revou-fsse-oct25.github.io/milestone-2-HilmiSalsabilla/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white bg-ind rounded-md px-4 py-2 hover:bg-[#4f52d8] hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(99,102,241,0.3)] transition-all">↗ Live Demo</a>
+                                <a href="https://github.com/HilmiSalsabilla/milestone-2-HilmiSalsabilla" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-4 py-2 hover:text-ink hover:border-white/25 hover:bg-white/5 transition-all">Source Code</a>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- revoshop -->
+                    <section id="revoshop" class="scroll-mt-28 grid md:grid-cols-[340px_1fr] bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-0.5 transition-all group">
+                        <figure class="border-b md:border-b-0 md:border-r border-line aspect-video md:aspect-auto overflow-hidden">
+                            <img src="../assets/preview/projects/revoshop.png" alt="Preview of RevoShop E-commerce Platform" loading="lazy" class="w-full h-full object-cover grayscale-[30%] brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all">
+                            <figcaption>Full-stack e-commerce platform</figcaption>
+                        </figure>
+
+                        <article class="p-7 md:p-8 flex flex-col justify-center">
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">E-Commerce</p>
+                            <h3 class="font-display font-bold text-xl tracking-tight mb-3 text-ink">RevoShop</h3>
+                            <p class="text-sm text-muted leading-relaxed mb-5">
+                                A full-stack e-commerce platform built with Next.js, React 19, and TypeScript. Features product browsing, shopping cart functionality, and a secure checkout process with responsive design across devices.
+                            </p>
+                            
+                            <div class="flex gap-2 flex-wrap">
+                                <a href="https://milestone-3-hilmisalsabilla.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white bg-ind rounded-md px-4 py-2 hover:bg-[#4f52d8] hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(99,102,241,0.3)] transition-all">↗ Live Demo</a>
+                                <a href="https://github.com/HilmiSalsabilla/milestone-3-HilmiSalsabilla" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-4 py-2 hover:text-ink hover:border-white/25 hover:bg-white/5 transition-all">Source Code</a>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- revobank api -->
+                    <section id="revobank" class="scroll-mt-28 bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-0.5 transition-all">
+                        <article class="p-7 md:p-8 flex flex-col justify-center">
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">API</p>
+                            <h3 class="font-display font-bold text-xl tracking-tight mb-3 text-ink">RevoBank API</h3>
+                            <p class="text-sm text-muted leading-relaxed mb-5">
+                                A RESTful API designed to handle basic banking operations such as account management, transactions, and user authentication. Built with Node.js and Express for a secure, efficient backend.
+                            </p>
+                            
+                            <div class="flex gap-2 flex-wrap">
+                                <a href="https://github.com/HilmiSalsabilla/milestone-4-HilmiSalsabilla" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-4 py-2 hover:text-ink hover:border-white/25 hover:bg-white/5 transition-all">Source Code</a>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- fan page -->
+                    <section id="fanpage" class="scroll-mt-28 grid md:grid-cols-[340px_1fr] bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-0.5 transition-all group">
+                        <figure class="border-b md:border-b-0 md:border-r border-line aspect-video md:aspect-auto overflow-hidden">
+                            <img src="../assets/preview/projects/fanpage.png" alt="Preview of 1D Fan Page" loading="lazy" class="w-full h-full object-cover grayscale-[30%] brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all">
+                            <figcaption>Semantic HTML fan page for accessibility practice</figcaption>
+                        </figure>
+
+                        <article class="p-7 md:p-8 flex flex-col justify-center">
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">Practice Project</p>
+                            <h3 class="font-display font-bold text-xl tracking-tight mb-3 text-ink">One Direction Fan Page</h3>
+                            <p class="text-sm text-muted leading-relaxed mb-5">
+                                A fun, semantic HTML project built to practice accessibility and structure using HTML5 and CSS fundamentals.
+                            </p>
+                            
+                            <div class="flex gap-2 flex-wrap">
+                                <a href="https://hilmisalsabilla.github.io/Lecture2-HTMLSemantic/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white bg-ind rounded-md px-4 py-2 hover:bg-[#4f52d8] hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(99,102,241,0.3)] transition-all">↗ Visit Page</a>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- taskflow -->
+                    <section id="taskflow" class="scroll-mt-28 grid md:grid-cols-[340px_1fr] bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-0.5 transition-all group">
+                        <figure class="border-b md:border-b-0 md:border-r border-line aspect-video md:aspect-auto overflow-hidden">
+                            <img src="../assets/preview/projects/taskflow.png" alt="Preview of Taskflow Project" loading="lazy" class="w-full h-full object-cover grayscale-[30%] brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all">
+                            <figcaption>Task management app using HTML, CSS, and JavaScript</figcaption>
+                        </figure>
+
+                        <article class="p-7 md:p-8 flex flex-col justify-center">
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">Web App</p>
+                            <h3 class="font-display font-bold text-xl tracking-tight mb-3 text-ink">TaskFlow</h3>
+                            <p class="text-sm text-muted leading-relaxed mb-5">
+                                A task management web app that helps users organize and track daily activities efficiently. Built with HTML, CSS, and JavaScript, featuring a responsive and intuitive UI.
+                            </p>
+                            
+                            <div class="flex gap-2 flex-wrap">
+                                <a href="https://github.com/HilmiSalsabilla/taskflow" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-4 py-2 hover:text-ink hover:border-white/25 hover:bg-white/5 transition-all">Source Code</a>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- forum -->
+                    <section id="forum" class="scroll-mt-28 grid md:grid-cols-[340px_1fr] bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-0.5 transition-all group">
+                        <figure class="border-b md:border-b-0 md:border-r border-line aspect-video md:aspect-auto overflow-hidden">
+                            <img src="../assets/preview/projects/forum.png" alt="Preview of Forum Web App" loading="lazy" class="w-full h-full object-cover grayscale-[30%] brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all">
+                            <figcaption>Student discussion platform prototype</figcaption>
+                        </figure>
+
+                        <article class="p-7 md:p-8 flex flex-col justify-center">
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">Web App</p>
+                            <h3 class="font-display font-bold text-xl tracking-tight mb-3 text-ink">Forum Web Application</h3>
+                            <p class="text-sm text-muted leading-relaxed mb-5">
+                                A discussion platform prototype for students to share ideas, questions, and resources. Focused on user interaction and frontend layout structure.
+                            </p>
+                            
+                            <div class="flex gap-2 flex-wrap">
+                                <a href="https://github.com/HilmiSalsabilla/forum" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-4 py-2 hover:text-ink hover:border-white/25 hover:bg-white/5 transition-all">Source Code</a>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- html projects -->
+                    <section id="html-project" class="scroll-mt-28 grid md:grid-cols-[340px_1fr] bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-0.5 transition-all group">
+                        <figure class="border-b md:border-b-0 md:border-r border-line aspect-video md:aspect-auto overflow-hidden">
+                            <img src="../assets/preview/projects/html.png" alt="Preview of HTML Projects Collection" loading="lazy" class="w-full h-full object-cover grayscale-[30%] brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all">
+                            <figcaption>30 mini projects using JavaScript, HTML, and CSS</figcaption>
+                        </figure>
+
+                        <article class="p-7 md:p-8 flex flex-col justify-center">
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">JavaScript</p>
+                            <h3 class="font-display font-bold text-xl tracking-tight mb-3 text-ink">
+                                JavaScript 30 Projects in 30 Days
+                            </h3>
+                            <p class="text-sm text-muted leading-relaxed mb-5">
+                                A 30-day mini project challenge using HTML, CSS, and JavaScript. Built to strengthen DOM manipulation and problem-solving skills.
+                            </p>
+                            
+                            <div class="flex gap-2 flex-wrap">
+                                <a href="https://hilmisalsabilla.github.io/HTML-Projects/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-white bg-ind rounded-md px-4 py-2 hover:bg-[#4f52d8] hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(99,102,241,0.3)] transition-all">↗ Live Demo</a>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- to-dos -->
+                    <section id="todos" class="scroll-mt-28 grid md:grid-cols-[340px_1fr] bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-0.5 transition-all group">
+                        <figure class="border-b md:border-b-0 md:border-r border-line aspect-video md:aspect-auto overflow-hidden">
+                            <img src="../assets/preview/projects/todos.png" alt="Preview of Todos project" loading="lazy" class="w-full h-full object-cover grayscale-[30%] brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all">
+                            <figcaption>Lightweight JavaScript-based task list app</figcaption>
+                        </figure>
+
+                        <article class="p-7 md:p-8 flex flex-col justify-center">
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">JavaScript</p>
+                            <h3 class="font-display font-bold text-xl tracking-tight mb-3 text-ink">ToDos</h3>
+                            <p class="text-sm text-muted leading-relaxed mb-5">
+                                A simple and lightweight task list app to practice JavaScript DOM manipulation. Users can add, remove, and mark tasks as complete.
+                            </p>
+                            
+                            <div class="flex gap-2 flex-wrap">
+                                <a href="https://github.com/HilmiSalsabilla/todos" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-4 py-2 hover:text-ink hover:border-white/25 hover:bg-white/5 transition-all">Source Code</a>
+                            </div>
+                        </article>
+                    </section>
+                    
+                    <!-- bookstore -->
+                    <section id="bookstore" class="scroll-mt-28 grid md:grid-cols-[340px_1fr] bg-card border border-line rounded-2xl overflow-hidden hover:border-ind/35 hover:-translate-y-0.5 transition-all group">
+                        <figure class="border-b md:border-b-0 md:border-r border-line aspect-video md:aspect-auto overflow-hidden">
+                            <img src="../assets/preview/projects/bookstore.png" alt="Preview of Bookstore Web Management project" loading="lazy" class="w-full h-full object-cover grayscale-[30%] brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all">
+                            <figcaption>CRUD web app built with CodeIgniter 3</figcaption>
+                        </figure>
+
+                        <article class="p-7 md:p-8 flex flex-col justify-center">
+                            <p class="text-[0.68rem] tracking-[0.18em] text-faint uppercase mb-2.5">PHP / CodeIgniter</p>
+                            <h3 class="font-display font-bold text-xl tracking-tight mb-3 text-ink">Bookstore Web Management</h3>
+                            <p class="text-sm text-muted leading-relaxed mb-5">
+                                A CodeIgniter 3-based CRUD web application for managing books, users, and orders. Includes authentication, admin dashboard, and database integration.
+                            </p>
+                            
+                            <div class="flex gap-2 flex-wrap">
+                                <a href="https://github.com/HilmiSalsabilla/bookstore" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-muted border border-line2 rounded-md px-4 py-2 hover:text-ink hover:border-white/25 hover:bg-white/5 transition-all">Source Code</a>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer -->
-    <footer class="site-footer">
-        <p>© 2025 <strong>Hilmi Salsabilla</strong>. All rights reserved.</p>
-
-        <address>
-            <ul class="social-links">
-                <li>
-                    <a href="https://www.linkedin.com/in/hilmi-salsabilla/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-                        <img src="../assets/logo/linkedin.png" alt="LinkedIn Logo" loading="lazy">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/hsalsabillaa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
-                        <img src="../assets/logo/instagram.png" alt="Instagram Logo" loading="lazy">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/HilmiSalsabilla" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-                        <img src="../assets/logo/github.png" alt="GitHub Logo" loading="lazy">
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:hilmisalsabilla6@gmail.com" aria-label="Email Hilmi Salsabilla">
-                        <img src="../assets/logo/email.png" alt="Email Logo" loading="lazy">
-                    </a>
-                </li>
-            </ul>
-        </address>
+    <footer class="bg-bg border-t border-line py-10">
+        <div class="max-w-5xl mx-auto px-6 md:px-10 flex justify-between items-center flex-wrap gap-4">
+            <p class="text-sm text-faint">
+                © 2026 <strong class="text-indsoft font-medium">Hilmi Salsabilla</strong>. Crafted with intent.
+            </p>
+            
+            <!-- pages navigation -->
+            <nav class="flex gap-6" aria-label="Footer Navigation">
+                <a href="../pages/about.html" class="text-sm text-faint hover:text-indsoft transition">About</a>
+                <a href="../pages/projects.html" class="text-sm text-faint hover:text-indsoft transition">Projects</a>
+                <a href="../pages/contact.html" class="text-sm text-faint hover:text-indsoft transition">Contact</a>
+                <a href="../assets/document/cv-hilmi-salsabilla.pdf" download class="text-sm text-faint hover:text-indsoft transition">Download CV</a>
+            </nav>
+        </div>
     </footer>
 
-    <script src="../assets/js/navbar_scroll.js"></script>
+    <a href="#" class="btt fixed bottom-8 right-8 z-50 w-11 h-11 rounded-full bg-surface border border-line2 flex items-center justify-center text-muted text-lg hover:bg-ind hover:border-ind hover:text-white transition-all" id="btt" aria-label="Back to top">↑</a>
+
+    <script src="../assets/js/nav.js"></script>
 </body>
 </html>
