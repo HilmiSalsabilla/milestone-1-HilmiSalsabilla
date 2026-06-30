@@ -7,119 +7,180 @@
     <!-- browser tab -->
     <title>Contact | Hilmi Salsabilla</title>
     <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/js/tw-config.js"></script>
+    <link rel="stylesheet" href="../assets/css/custom.css">
 
     <!-- seo meta -->
     <meta name="description" content="Contact Hilmi Salsabilla — get in touch for web development projects, collaborations, or professional inquiries.">
     <meta name="keywords" content="Hilmi Salsabilla, web developer, portfolio, projects, Information Systems">
     <meta name="author" content="Hilmi Salsabilla">
 </head>
-<body id="top">
+<body class="bg-bg text-ink font-body leading-relaxed overflow-x-hidden pt-[72px]">
     <!-- header -->
-    <header class="site-header">
-        <h1 class="logo">
-            <a href="../index.html" aria-label="Homepage of Hilmi Salsabilla">Hilmi Salsabilla</a>
-        </h1>
-
-        <nav class="site-nav" aria-label="Main Navigation">
-            <ul class="list-nav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html" aria-current="page">Contact</a></li>
-                <li><a href="../assets/document/cv-hilmi-salsabilla.pdf" download>Download CV</a></li>
+    <header>
+        <nav class="site-nav fixed top-0 left-0 right-0 z-[100] flex justify-between items-center px-6 md:px-12 py-4 bg-bg/80 backdrop-blur-xl border-b border-line">
+            <a href="../index.html" class="font-display font-extrabold text-lg tracking-wide text-ink">H<span class="text-indsoft">.</span>S</a>
+            
+            <ul class="hidden md:flex gap-1 list-none">
+                <li>
+                    <a href="../index.html" class="text-sm font-medium px-3.5 py-1.5 rounded-md text-muted hover:text-ink hover:bg-white/5 transition">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="text-sm font-medium px-3.5 py-1.5 rounded-md text-muted hover:text-ink hover:bg-white/5 transition">About</a>
+                </li>
+                <li>
+                    <a href="projects.html" class="text-sm font-medium px-3.5 py-1.5 rounded-md text-muted hover:text-ink hover:bg-white/5 transition">Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="text-sm font-semibold px-4 py-1.5 rounded-md text-indsoft border border-ind/35 bg-indglow" aria-current="page">Contact</a>
+                </li>
+                <li>
+                    <a href="../assets/document/cv-hilmi-salsabilla.pdf" download class="text-sm font-medium px-3.5 py-1.5 rounded-md text-muted hover:text-ink hover:bg-white/5 transition">Download CV</a>
+                </li>
             </ul>
         </nav>
     </header>
     
     <!-- main -->
     <main id="main-content">
-        <section class="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Get in Touch!</h2>
-            <p>
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out using the form below or through my social links.
-            </p>
-
-            <form action="#" method="post" class="contact-form">
-                <fieldset>
-                    <legend>Message me!</legend>
-
-                    <label for="fullname">Fullname</label>
-                    <input type="text" name="fullname" id="fullname" placeholder="Your name" required>
-
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Your email" required>
-
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" placeholder="Your message" required></textarea>
-
-                    <button type="submit">Send Message</button>
-                    <button type="reset">Clear Form</button>
-                </fieldset>
-            </form>
+        <!-- page hero -->
+        <section class="py-20 bg-surface border-b border-line">
+            <article class="max-w-5xl mx-auto px-6 md:px-10">
+                <p class="flex items-center gap-2.5 text-xs font-medium tracking-[0.2em] text-indsoft uppercase mb-4">
+                    <span class="block w-5 h-px bg-ind"></span>Contact
+                </p>
+                
+                <h1 class="font-display font-extrabold text-5xl md:text-7xl leading-[0.95] tracking-tight mb-5">
+                    Let's Work<br><span class="text-outline">Together</span>
+                </h1>
+                
+                <p class="text-base text-muted max-w-xl leading-relaxed">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                </p>
+            </article>
         </section>
 
-        <!-- <section class="contact-info" role="contentinfo">
-            <h3>Connect with me</h3>
-            <address>
-                <ul class="social-links">
-                    <li>
-                        <a href="https://www.linkedin.com/in/hilmi-salsabilla/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-                            <img src="../assets/logo/linkedin.png" alt="LinkedIn Logo" loading="lazy">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/hsalsabillaa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
-                            <img src="../assets/logo/instagram.png" alt="Instagram Logo" loading="lazy">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/HilmiSalsabilla" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-                            <img src="../assets/logo/github.png" alt="GitHub Logo" loading="lazy">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:hilmisalsabilla6@gmail.com" aria-label="Email Hilmi Salsabilla">
-                            <img src="../assets/logo/email.png" alt="Email Logo" loading="lazy">
-                        </a>
-                    </li>
-                </ul>
-            </address>
-        </section> -->
+        <!-- contact information -->
+        <section class="py-24">
+            <div class="max-w-5xl mx-auto px-6 md:px-10">
+                <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+                    <!-- contact details -->
+                    <div>
+                        <p class="text-base text-muted leading-loose mb-8">
+                            Feel free to reach out using the form, or connect with me directly through any of the channels below. I try to respond within a day or two.
+                        </p>
+                        
+                        <div class="flex flex-col gap-3">
+                            <!-- Email -->
+                            <a href="mailto:hilmisalsabilla6@gmail.com" class="flex items-center gap-3.5 text-sm text-muted border border-line rounded-xl px-4 py-4 hover:text-ink hover:border-ind/35 hover:bg-card transition-all">
+                                <span class="w-8 h-8 rounded-md bg-inddim flex items-center justify-center text-sm text-indsoft flex-shrink-0">✉</span>
+                                <span class="flex-1">
+                                    <span class="block text-[0.65rem] tracking-wider text-faint uppercase mb-0.5">Email</span>
+                                    <span class="block text-ink text-sm">hilmisalsabilla6@gmail.com</span>
+                                </span>
+                            </a>
 
-        <a href="#top" class="back-to-top" aria-label="Back to top of page">↑</a>
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/hilmi-salsabilla/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3.5 text-sm text-muted border border-line rounded-xl px-4 py-4 hover:text-ink hover:border-ind/35 hover:bg-card transition-all">
+                                <span class="w-8 h-8 rounded-md bg-inddim flex items-center justify-center text-sm text-indsoft flex-shrink-0">in</span>
+                                <span class="flex-1">
+                                    <span class="block text-[0.65rem] tracking-wider text-faint uppercase mb-0.5">LinkedIn</span>
+                                    <span class="block text-ink text-sm">hilmi-salsabilla</span>
+                                </span>
+                            </a>
+
+                            <!-- GitHub -->
+                            <a href="https://github.com/HilmiSalsabilla" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3.5 text-sm text-muted border border-line rounded-xl px-4 py-4 hover:text-ink hover:border-ind/35 hover:bg-card transition-all">
+                                <span class="w-8 h-8 rounded-md bg-inddim flex items-center justify-center text-sm text-indsoft flex-shrink-0">gh</span>
+                                <span class="flex-1">
+                                    <span class="block text-[0.65rem] tracking-wider text-faint uppercase mb-0.5">GitHub</span>
+                                    <span class="block text-ink text-sm">HilmiSalsabilla</span>
+                                </span>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/hsalsabillaa/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3.5 text-sm text-muted border border-line rounded-xl px-4 py-4 hover:text-ink hover:border-ind/35 hover:bg-card transition-all">
+                                <span class="w-8 h-8 rounded-md bg-inddim flex items-center justify-center text-sm text-indsoft flex-shrink-0">ig</span>
+                                <span class="flex-1">
+                                    <span class="block text-[0.65rem] tracking-wider text-faint uppercase mb-0.5">Instagram</span>
+                                    <span class="block text-ink text-sm">@hsalsabillaa</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- message form -->
+                    <div>
+                        <div class="bg-card border border-line rounded-2xl p-9">
+                            <span class="block font-display font-bold text-xl mb-7 text-ink">Message Me</span>
+                            
+                            <form onsubmit="handleForm(event)">
+                                <!-- name -->
+                                <div class="mb-5">
+                                    <label for="fullname" class="block text-[0.72rem] font-medium tracking-wider uppercase text-faint mb-2">
+                                        Full Name
+                                    </label>
+                                    <input type="text" id="fullname" name="fullname" placeholder="Your name" required class="w-full bg-bg border border-line rounded-lg px-4 py-3.5 text-sm text-ink placeholder-faint outline-none focus:border-ind focus:ring-4 focus:ring-indglow transition-all">
+                                </div>
+                                
+                                <!-- email -->
+                                <div class="mb-5">
+                                    <label for="email" class="block text-[0.72rem] font-medium tracking-wider uppercase text-faint mb-2">
+                                        Email
+                                    </label>
+                                    <input type="email" id="email" name="email" placeholder="Your email" required class="w-full bg-bg border border-line rounded-lg px-4 py-3.5 text-sm text-ink placeholder-faint outline-none focus:border-ind focus:ring-4 focus:ring-indglow transition-all">
+                                </div>
+                                
+                                <!-- message -->
+                                <div class="mb-5">
+                                    <label for="message" class="block text-[0.72rem] font-medium tracking-wider uppercase text-faint mb-2">
+                                        Message
+                                    </label>
+                                    <textarea id="message" name="message" placeholder="Your message" required class="w-full min-h-[140px] bg-bg border border-line rounded-lg px-4 py-3.5 text-sm text-ink placeholder-faint outline-none focus:border-ind focus:ring-4 focus:ring-indglow transition-all resize-none"></textarea>
+                                </div>
+
+                                <!-- buttons -->
+                                <div class="flex gap-3 mt-2">
+                                    <button type="submit" id="send-btn" class="flex-1 justify-center inline-flex items-center gap-2 text-sm font-semibold tracking-wide px-6 py-3 rounded-lg bg-ind text-white hover:bg-[#4f52d8] hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(99,102,241,0.35)] transition-all">
+                                        Send Message
+                                    </button>
+                                    
+                                    <button type="reset" class="flex-1 justify-center inline-flex items-center gap-2 text-sm font-semibold tracking-wide px-6 py-3 rounded-lg bg-transparent text-muted border border-line2 hover:text-ink hover:border-white/25 hover:bg-white/5 transition-all">
+                                        Clear Form
+                                    </button>
+                                </div>
+                                
+                                <p id="form-status" class="hidden text-sm text-muted mt-3.5"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer -->
-    <footer class="site-footer">
-        <p>© 2025 <strong>Hilmi Salsabilla</strong>. All rights reserved.</p>
-
-        <address>
-            <ul class="social-links">
-                <li>
-                    <a href="https://www.linkedin.com/in/hilmi-salsabilla/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-                        <img src="../assets/logo/linkedin.png" alt="LinkedIn Logo" loading="lazy">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/hsalsabillaa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
-                        <img src="../assets/logo/instagram.png" alt="Instagram Logo" loading="lazy">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/HilmiSalsabilla" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-                        <img src="../assets/logo/github.png" alt="GitHub Logo" loading="lazy">
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:hilmisalsabilla6@gmail.com" aria-label="Email Hilmi Salsabilla">
-                        <img src="../assets/logo/email.png" alt="Email Logo" loading="lazy">
-                    </a>
-                </li>
-            </ul>
-        </address>
+    <footer class="bg-bg border-t border-line py-10">
+        <div class="max-w-5xl mx-auto px-6 md:px-10 flex justify-between items-center flex-wrap gap-4">
+            <p class="text-sm text-faint">
+                © 2026 <strong class="text-indsoft font-medium">Hilmi Salsabilla</strong>. Crafted with intent.
+            </p>
+            
+            <!-- pages navigation -->
+            <nav class="flex gap-6" aria-label="Footer Navigation">
+                <a href="../pages/about.html" class="text-sm text-faint hover:text-indsoft transition">About</a>
+                <a href="../pages/projects.html" class="text-sm text-faint hover:text-indsoft transition">Projects</a>
+                <a href="../pages/contact.html" class="text-sm text-faint hover:text-indsoft transition">Contact</a>
+                <a href="../assets/document/cv-hilmi-salsabilla.pdf" download class="text-sm text-faint hover:text-indsoft transition">Download CV</a>
+            </nav>
+        </div>
     </footer>
 
-    <script src="../assets/js/navbar_scroll.js"></script>
+    <a href="#" class="btt fixed bottom-8 right-8 z-50 w-11 h-11 rounded-full bg-surface border border-line2 flex items-center justify-center text-muted text-lg hover:bg-ind hover:border-ind hover:text-white transition-all" id="btt" aria-label="Back to top">↑</a>
+
+    <script src="../assets/js/nav.js"></script>
 </body>
 </html>
